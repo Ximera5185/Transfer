@@ -29,6 +29,7 @@ namespace Transfer
 
             ShowFighters(_fighters2);
         }
+
         private void ShowFighters(List<Fighter> fighters)
         {
             foreach (Fighter fighter in fighters)
