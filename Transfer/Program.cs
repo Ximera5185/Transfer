@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Transfer
 {
@@ -10,6 +6,18 @@ namespace Transfer
     {
         static void Main(string [] args)
         {
+            Database database = new Database();
+
+            database.ShowAllFighters();
+            
+
+            database.TransferFighters();
+
+
+            database.ShowAllFighters();
+           
+
+            Console.ReadKey();
         }
     }
 }
