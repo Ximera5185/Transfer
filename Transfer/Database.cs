@@ -18,14 +18,13 @@ namespace Transfer
         {
             string simbol = "б";
 
-            var sortList = _fighters1.Where(fighter => fighter.Name.StartsWith(simbol,StringComparison.OrdinalIgnoreCase)).ToList();
+            var sortList = _fighters1.Where(fighter => fighter.Name.StartsWith(simbol, StringComparison.OrdinalIgnoreCase)).ToList();
 
             _fighters1 = _fighters1.Except(sortList).ToList();
 
             _fighters2 = _fighters2.Union(sortList).ToList();
         }
 
-       
         public void ShowAllFighters()
         {
             ShowFighters(_fighters1);
